@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 export const Wrapper = styled.div`
     height: 50px;
-    background-color: yellow;
     width: 100%;
     position: fixed;
     top: 0;
@@ -36,6 +36,10 @@ function Navigation() {
                 <li><StyledLink to="/Test1">Test1</StyledLink></li>
                 <li><StyledLink to="/Test2">Test2</StyledLink></li>
                 <li><StyledLink to="/Test3">Test3</StyledLink></li>
+                <li><StyledLink to="/">Home</StyledLink></li>
+                <li><HashLink smooth to={"#Test1"}>Hash1</HashLink></li>
+                <li><HashLink smooth to={'#Test2'}>Hash2</HashLink></li>
+                <li><HashLink smooth to={'#Test3'}>Hash3</HashLink></li>
             </NavLinks>
         </Nav>
         </Wrapper>
