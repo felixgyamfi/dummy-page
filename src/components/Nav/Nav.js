@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 export const Wrapper = styled.div`
     height: 50px;
@@ -23,14 +24,18 @@ export const NavLinks = styled.ul`
     }
 `;
 
+export const StyledLink = styled(Link)`
+
+`;
+
 function Navigation() {
     return (
         <Wrapper>
         <Nav className="Nav"><h3>Navigation</h3>
             <NavLinks>
-                <li><a to="/Test1">Test1</a></li>
-                <li><a to="/Test1">Test2</a></li>
-                <li><a to="/Test1">Test3</a></li>
+                <li><StyledLink to="/Test1">Test1</StyledLink></li>
+                <li><StyledLink to="/Test2">Test2</StyledLink></li>
+                <li><StyledLink to="/Test3">Test3</StyledLink></li>
             </NavLinks>
         </Nav>
         </Wrapper>

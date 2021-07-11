@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    position: relative;
-    left: 2000px;
-    width: 1280px;
-    height: 720px;
+    position: absolute;
+    overflow-y: auto;
+    width: 100vh;
+    height: 100vw;
     background-color: lightpink;
 `;
 
